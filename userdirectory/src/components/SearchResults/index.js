@@ -1,14 +1,13 @@
 import React from "react";
-import "./style.css";
 
-function UserCard({ name, image, phone, email, age }) {
+function SearchResult({ name, image, phone, email, age }) {
   return (
     <div className="card">
       <div>
-        <div className="card-img-top">
+        <div className="img-container">
           <img alt={name} src={image} />
         </div>
-        <div className="card-body">
+        <div className="content">
           <ul>
             <li>
               <strong>Name:</strong> {name}
@@ -29,4 +28,4 @@ function UserCard({ name, image, phone, email, age }) {
   );
 }
 
-export default UserCard;
+export default SearchResult;

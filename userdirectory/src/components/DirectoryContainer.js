@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import UserCard from "../components/Usercard";
+import SearchForm from "../components/SearchForm";
+import SearchResult from "../components/SearchResults";
+import NavBar from "../components/navbar";
 import API from "../utils/API";
 
 function DirectoryContainer() {
   // Setting this.state.friends to the friends json array
   const [users, setUsers] = useState([]);
-  const [search, setSearch] = useState();
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     API.makeUsers()
@@ -23,9 +26,9 @@ function DirectoryContainer() {
       )
       .catch((err) => console.log(err));
   }, []);
-
   // Map over this.state.friends and render a FriendCard component for each
   // friend object
+
   function renderUsers() {
     return users.map((user) => {
       return (
@@ -41,7 +44,16 @@ function DirectoryContainer() {
     });
   }
 
-  return <div>{renderUsers()}</div>;
+  const handleInputChange = (event) => setSearch(event.target.value);
+  return (
+    <div>
+      <NavBar />
+      <SearchForm handleInputChange={handleInputChange} results={search} />
+
+      {renderUsers()}
+      <SearchResult></SearchResult>
+    </div>
+  );
 }
 
 export default DirectoryContainer;
