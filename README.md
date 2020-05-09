@@ -1,51 +1,32 @@
-# Unit 19 React Homework: Employee Directory
+# User Directory
 
-## Overview
+[![License: MPL 2.0](https://img.shields.io/badge/License-MIT%20-brightgreen.svg)]
 
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events. You may use random user generator (https://randomuser.me/) or another fake user database as the employee data. You do not need to deploy a server for this assignment.
+## Description
 
-## User Story
+With this app, you will be able to keep track of all employees with their important information, and in the future be able to sort and search for them.
 
-As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+## Installation
 
-## Business Context
+Just run in the browser or clone the repo and run locally
 
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+## Usage
 
-## Acceptance Criteria
+Just follow to the link
 
-Given a table of random users, when the user loads the page, a table of employees should render.
+## License
 
-The user should be able to:
+This project is licensed under MIT
 
-- Sort the table by at least one category
+## Contributing
 
-- Filter the users by at least one property.
+No need to contribute as of now
 
-## Commit Early and Often
+## Tests
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+No tests are provided
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+## Questions
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-Follow these guidelines for committing:
-
-- Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-- Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-- Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-- Test your application before you commit to ensure functionality at every step in the development process
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-- the URL to the deployed application
-
-- the URL to the Github repository
+If you have any questions, you could email me at ayalanick84, or message me on github https://api.github.com/users/ayalanick84
+![Github avatar](https://avatars3.githubusercontent.com/u/59402185?v=4)
