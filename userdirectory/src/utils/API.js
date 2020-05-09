@@ -1,9 +1,8 @@
 import axios from "axios";
-const BASEURL = "https://randomuser.me/api/?results=20";
-
 
 export default {
-   function () {
+  makeUsers: function () {
+    const BASEURL = "https://randomuser.me/api/?results=25&nat=us";
     return axios.get(BASEURL);
   },
 };
